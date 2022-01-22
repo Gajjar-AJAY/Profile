@@ -1,0 +1,181 @@
+.title{
+	text-transform: uppercase;
+	padding: 2rem;
+	font-size: 35px;
+	letter-spacing: 1px;
+}
+
+
+.title::after {
+	display: block;
+	content: '';
+	border-bottom: 5px solid #d9832e;
+	width: 50px;
+}
+
+
+
+.skill_container{
+	display: flex;
+	flex-wrap: wrap;
+	height:auto;
+	padding: 2rem 9%;
+	gap:1.5rem;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	/*align-items: center;*/
+	/*background: skyblue;*/
+}
+
+.skill_bar{
+	flex:1 1 40rem;
+	margin-right: 50px;
+}
+
+.skill_bar p{
+	padding: 1rem 2rem;
+	font-size: 15px;
+	color: grey;
+}
+
+.skill_title{
+	padding: 2rem 2rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	/*background: lightblue;*/
+}
+
+.skill_title label{
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.skill_title label:nth-child(even){
+	font-weight: 400;
+	color: grey;
+}
+
+.fullbar{
+	width: 100%;
+	background-color: #ddd;
+	height: 10px;
+	margin-left: 20px;
+}
+
+.fullbar .skill_len.html{
+	width: 92%;
+	background-color: #d9832e;
+	padding-top: 5px;
+	padding-bottom:5px;
+}
+
+.fullbar .skill_len.css{
+	width: 86%;
+	background-color: #d9832e;
+	padding-top: 5px;
+	padding-bottom:5px;
+}
+
+.fullbar .skill_len.java{
+	width: 50%;
+	background-color: #d9832e;
+	padding-top: 5px;
+	padding-bottom:5px;
+}
+
+.fullbar .skill_len.python{
+	width: 60%;
+	background-color: #d9832e;
+	padding-top: 5px;
+	padding-bottom:5px;
+}
+
+
+
+
+
+.skill_service{
+	height: 300px;
+	width: 100%;
+	flex: 1 1 40rem;
+}
+
+.skill_service img{
+	height: 100%;
+	width: 100%;
+}
+
+.singal_service{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2rem;
+	width: 100%;
+	margin-left: 30px;
+	background: #d9832e;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.singal_service:nth-child(even){
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin-top: 4rem;
+	color: #000;
+	cursor: pointer;
+}
+
+
+.singal_service_img{
+	height: 50px;
+	width: 500px;
+}
+
+.singal_service_img img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+
+.services_desc label{
+	padding: 1rem 2rem;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.services_desc p{
+	padding: 1rem 2rem;
+	font-size: 14px;
+}
+
+
+
+
+@media(max-width: 768px){
+	.singal_service{
+		margin-left: 0px;
+	}
+}
+
+
+@media(max-width: 500px){
+	.singal_service{
+		margin-left: 0px;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.skill_container{
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width:400px)
+{
+	.skill_container{
+		margin-bottom: 50px;
+	}	
+}

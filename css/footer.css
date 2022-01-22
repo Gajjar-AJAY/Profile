@@ -1,0 +1,31 @@
+.footer_container{
+	display: flex;
+	background: #000;
+	color: #ddd;
+	padding: 2rem;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer_container .footer_content{
+	display: flex;
+	background-size: red;
+}
+
+.footer_container .footer_content i{
+	font-size: 20px;
+	padding: 20px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.footer_container .footer_content i:hover{
+	color: #d9832e;
+	transition: all 0.3s linear;
+}
+
+
+.footer_container  label{
+	font-size: 15px;
+}
